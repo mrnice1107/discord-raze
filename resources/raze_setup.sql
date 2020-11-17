@@ -9,20 +9,32 @@ USE raze_database;
 SET SQL_SAFE_UPDATES = 0;
 
 
+# formula
+CREATE TABLE formulas
+(
+	formula_id int NOT NULL AUTO_INCREMENT primary key,
+	formula_name varchar(1000),
+	guild_id char(18)
+);
 
-
+CREATE TABLE formula_questions
+(
+	formula_id varchar(1000),
+	question_id int,
+	question varchar(1000)
+);
 
 # role section
 CREATE TABLE role_sections
 (
-role_section char(18) primary key,
-guild_id char(18)
+	role_section char(18) primary key,
+	guild_id char(18)
 );
 
 CREATE TABLE role_section_sub_roles
 (
-role_id char(18) primary key,
-role_section char(18)
+	role_id char(18) primary key,
+	role_section char(18)
 );
 
 
