@@ -4,9 +4,12 @@
 
 USE raze_database;
 
-# formular
-SELECT * FROM formulars;
-SELECT * FROM formular_questions;
+# application
+SELECT * FROM applications;
+
+# formula
+SELECT * FROM formulas;
+SELECT * FROM formula_questions;
 
 # role section
 SELECT * FROM role_sections;

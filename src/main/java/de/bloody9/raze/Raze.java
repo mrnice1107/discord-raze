@@ -3,7 +3,7 @@ package de.bloody9.raze;
 import de.bloody9.core.Bot;
 import de.bloody9.core.models.objects.BotInitObject;
 import de.bloody9.feature.application.ApplicationFeature;
-import de.bloody9.feature.formula.listener.FormulaFeature;
+import de.bloody9.feature.formula.FormulaFeature;
 import de.bloody9.feature.rolesection.RoleSectionFeature;
 
 public class Raze extends Bot {

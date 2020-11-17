@@ -8,6 +8,15 @@ USE raze_database;
 # This guild_bansguild_bansguild_banssetting is required so you can delete things without doing a WHERE on a unique key
 SET SQL_SAFE_UPDATES = 0;
 
+# application
+CREATE TABLE applications
+(
+	application_id int NOT NULL AUTO_INCREMENT primary key,
+	application_name varchar(1000),
+    message_id char(18),
+    emojis varchar(100),
+	guild_id char(18)
+);
 
 # formula
 CREATE TABLE formulas
