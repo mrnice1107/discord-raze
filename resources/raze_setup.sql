@@ -14,7 +14,10 @@ CREATE TABLE applications
 	application_id int NOT NULL AUTO_INCREMENT primary key,
 	application_name varchar(1000),
     message_id char(18),
+    channel_id char(18),
+    output_channel_id char(18),
     emojis varchar(100),
+    formula_id int,
 	guild_id char(18)
 );
 
