@@ -4,6 +4,10 @@
 
 USE raze_database;
 
+
+# clan role
+SELECT * FROM clan_roles;
+
 # application
 SELECT * FROM applications;
 

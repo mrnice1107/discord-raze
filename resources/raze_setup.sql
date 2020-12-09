@@ -5,10 +5,18 @@
 CREATE DATABASE raze_database;
 USE raze_database;
 
-# This guild_bansguild_bansguild_banssetting is required so you can delete things without doing a WHERE on a unique key
+# This setting is required so you can delete things without doing a WHERE on a unique key
 SET SQL_SAFE_UPDATES = 0;
 
-# application
+# clan role feature
+CREATE TABLE clan_roles
+(
+	guild_id char(18) primary key,
+	role_id char(18)
+);
+
+
+# application feature
 CREATE TABLE applications
 (
 	application_id int NOT NULL AUTO_INCREMENT primary key,
@@ -21,7 +29,7 @@ CREATE TABLE applications
 	guild_id char(18)
 );
 
-# formula
+# formula feature
 CREATE TABLE formulas
 (
 	formula_id int NOT NULL AUTO_INCREMENT primary key,
@@ -36,7 +44,7 @@ CREATE TABLE formula_questions
 	question varchar(1000)
 );
 
-# role section
+# role section feature
 CREATE TABLE role_sections
 (
 	role_section char(18) primary key,

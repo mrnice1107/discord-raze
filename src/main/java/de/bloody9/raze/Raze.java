@@ -5,6 +5,7 @@ import de.bloody9.core.models.objects.BotInitObject;
 import de.bloody9.feature.application.ApplicationFeature;
 import de.bloody9.feature.formula.FormulaFeature;
 import de.bloody9.feature.rolesection.RoleSectionFeature;
+import de.bloody9.raze.features.clanrole.ClanRoleFeature;
 
 public class Raze extends Bot {
 
@@ -30,5 +31,8 @@ public class Raze extends Bot {
         features.add(new RoleSectionFeature());
         features.add(new FormulaFeature());
         features.add(new ApplicationFeature());
+
+        // internal features
+        features.add(new ClanRoleFeature());
     }
 }
