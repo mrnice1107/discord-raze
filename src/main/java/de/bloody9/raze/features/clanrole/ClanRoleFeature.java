@@ -38,6 +38,6 @@ public class ClanRoleFeature extends Feature {
     }
 
     public void addCommands() {
-        addCommand("clan", new ClanRoleCommand());
+        commands.put("clan", new ClanRoleCommand());
     }
 }
